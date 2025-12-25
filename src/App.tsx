@@ -149,7 +149,7 @@ function App() {
                     className={`tab tab-primary ${selectedTabId === code.id ? "active" : ""}`}
                     onClick={() => {
                       setSelectedTabId(code.id);
-                      // hookが切り替わったら、最初の利用可能なcodeTypeを選択
+                      // When the hook is switched, the first available codeType is selected
                       const selectedCode = code.code;
                       const firstCodeType = selectedCode?.hookStates
                         ? "hookStates"
